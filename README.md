@@ -15,3 +15,36 @@ Make sure you have the following libraries installed:
 - tensorflow
 - keras
 
+  Usage
+Clone the repository:
+bash
+Copy code
+git clone https://github.com/your-username/sinhala-lyrics-generator.git
+cd sinhala-lyrics-generator
+Run the provided Python script:
+bash
+Copy code
+python sinhala_lyrics_generator.py
+This script includes the following sections:
+
+Data Loading and Preprocessing: Reads the dataset from 'output.csv', removes unnecessary columns, and filters the dataset for Sinhala songs.
+
+Data Visualization: Analyzes the word count distribution of the Sinhala songs and removes records with more than 600 words.
+
+Tokenization: Tokenizes the lyrics and prepares input sequences for the LSTM model.
+
+LSTM Model Development: Builds a Bidirectional LSTM model for training on the Sinhala song lyrics. The model is trained for 10 epochs.
+
+Accuracy Plotting: Plots the training accuracy over epochs.
+
+Lyrics Generation: Defines a function to generate new Sinhala song lyrics based on a seed text.
+
+Results
+The LSTM model is trained on the provided dataset, and you can use the complete_this_song function to generate new Sinhala song lyrics by providing a seed text and the desired number of words.
+
+python
+Copy code
+complete_this_song("අහස නිල් පාටයි", 40)
+# Output: 'අහස නිල් පාටයි ඉන්න තනලා තනලා ඉරේ නිව නිව දමා අරන් අරන් සිහිල් සිහිල් සිහිල්...'
+Feel free to experiment with different seed texts and lengths to generate diverse Sinhala song lyrics.
+
