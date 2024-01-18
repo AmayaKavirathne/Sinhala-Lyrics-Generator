@@ -27,22 +27,22 @@ python sinhala_lyrics_generator.py
 
 This script includes the following sections:
 
- ### Data Loading and Preprocessing: 
+ ### Data Loading and Preprocessing: \
  Reads the dataset from 'output.csv', removes unnecessary columns, and filters the dataset for Sinhala songs.
 
-### Data Visualization: 
+### Data Visualization: \
 Analyzes the word count distribution of the Sinhala songs and removes records with more than 600 words.
 
-### Tokenization: 
+### Tokenization: \
 Tokenizes the lyrics and prepares input sequences for the LSTM model.
 
-### LSTM Model Development: 
+### LSTM Model Development: \
 Builds a Bidirectional LSTM model for training on the Sinhala song lyrics. The model is trained for 10 epochs.
 
-### Accuracy Plotting: 
+### Accuracy Plotting: \
 Plots the training accuracy over epochs.
 
-### Lyrics Generation:
+### Lyrics Generation:\
 Defines a function to generate new Sinhala song lyrics based on a seed text.
 
 # Results
